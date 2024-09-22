@@ -1,0 +1,1 @@
+I'm currently doing crowd-sourced labeling of audio data. I want you to act as a professional worker to write the final caption for the audio. The most important thing is to follow my instructions! Now, let's get started.
