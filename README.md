@@ -1,10 +1,10 @@
 # AudioSetCaps: An Enriched Audio-Caption Dataset using Automated Generation Pipeline with Large Audio and Language Models
 
-[:bookmark_tabs:[`NeurIPS 2024 Audio Imagination Workshop`](https://openreview.net/forum?id=uez4PMZwzP&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DNeurIPS.cc%2F2024%2FWorkshop%2FAudio_Imagination%2FAuthors%23your-submissions))] [![githubio](https://img.shields.io/badge/GitHub.io-Audio_Samples-blue?logo=Github&style=flat-square)](https://jishengbai.github.io/AudioSetCaps-webpage/)  [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/datasets/baijs/AudioSetCaps) 
+[`NeurIPS 2024 Workshop Paper`](https://openreview.net/forum?id=uez4PMZwzP&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DNeurIPS.cc%2F2024%2FWorkshop%2FAudio_Imagination%2FAuthors%23your-submissions)) [![githubio](https://img.shields.io/badge/GitHub.io-Audio_Samples-blue?logo=Github&style=flat-square)](https://jishengbai.github.io/AudioSetCaps-webpage/)  [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/datasets/baijs/AudioSetCaps) 
 
 ## :loudspeaker: News 
 
-**2024-10**: To appear at Audio Imagination: NeurIPS 2024 Workshop AI-Driven Speech, Music, and Sound Generation[NeurIPS 2024 Audio Imagination Workshop](https://openreview.net/group?id=NeurIPS.cc/2024/Workshop/Audio_Imagination#tab-accept).
+**2024-10**: To appear at [NeurIPS 2024 Audio Imagination Workshop](https://openreview.net/group?id=NeurIPS.cc/2024/Workshop/Audio_Imagination#tab-accept): NeurIPS 2024 Workshop AI-Driven Speech, Music, and Sound Generation.
 
 
 ## Models and datasets 
