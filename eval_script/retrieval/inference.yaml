@@ -1,0 +1,44 @@
+device: "cuda"
+seed: 20
+embed_size: 768
+temp: 0.07
+resume: False
+resume_path: ''
+pretrain: True
+ckpt_path: '~/ATR_HTSAT+RoBERTa_ASC_PT_mask25_AC_FT_T2AR1_46.3_A2TR1_59.3.pt'
+embed_regularization: true
+
+dist_args:
+  world_size: 1
+
+audio_args:
+  sr: 32000
+  n_fft: 1024
+  hop_length: 320
+  f_min: 50
+  f_max: 14000
+  n_mels: 64
+  max_length: 10
+  mono: True
+
+
+data_args:
+  dataset: "AudioCaps"
+  batch_size: 128
+  num_workers: 8
+
+audio_encoder_args:
+  type: "transformer"
+  pretrained: True
+  freeze: False
+
+
+text_encoder_args:
+  # type: 'bert-base-uncased'  'roberta-base'
+  type: 'roberta-base'
+  freeze: False
+
+training:
+  spec_augmentation: False
+  clip_grad: 2
+  dropout: 0.2

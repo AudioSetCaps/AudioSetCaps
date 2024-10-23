@@ -1,0 +1,51 @@
+device: "cuda"
+ckpt_path: "~/AAC_HTSAT+BART_ASC_PT_AC_FT_CR83.9_SR51.3.pt"
+seed: 20
+
+audio_args:
+  sr: 32000
+  n_fft: 1024
+  hop_length: 320
+  f_min: 50
+  f_max: 14000
+  n_mels: 64
+  max_length: 10
+  mono: True
+
+
+data_args:
+  dataset: "AudioCaps"
+  batch_size: 24
+  num_workers: 16
+
+
+audio_encoder_args:
+  model_arch: "transformer"
+  model_name: "htsat"
+  pretrained: True
+  freeze: True
+  spec_augment: True
+
+
+text_decoder_args:
+  name: "facebook/bart-base"
+  pretrained: true
+  bert_args:
+    attention_probs_dropout_prob: 0.2
+    hidden_act: "gelu"
+    hidden_dropout_prob: 0.2
+    hidden_size: 768
+    initializer_range: 0.02
+    intermediate_size: 2048
+    layer_norm_eps: !!float 1e-5
+    max_position_embeddings: 128
+    model_type: "bert"
+    num_attention_heads: 4
+    num_hidden_layers: 2
+    add_type_embeddings: false
+    vocab_size: 30522
+    add_cross_attention: true
+    is_decoder: true
+    num_labels: 0
+    name: "bert-base-uncased"
+
