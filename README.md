@@ -8,7 +8,7 @@
 
 We provide:
 
-1. Dataset: Captions for **6,117,099 (~6M)** 10-second audio files, sourcing from AudioSet, YouTube-8M and VGGSound. We also provide our intermediate metadata (e.g., Audio Q&A caption) for each audio (18,414,789 paired Q&A data in total). Download it now on [🤗 HuggingFace](https://huggingface.co/datasets/baijs/AudioSetCaps).
+1. Dataset: Captions for **6,117,099 (~6M)** 10-second audio files, sourcing from AudioSet, YouTube-8M and VGGSound. We also provide our intermediate metadata (e.g., Audio Q&A caption) for each audio (18,414,789 paired Q&A data in total). Download it now on [🤗 HuggingFace](https://huggingface.co/datasets/baijs/AudioSetCaps/tree/main/Dataset).
 2. Checkpoints: [The retrieval and captioning model checkpoint that are pretrained on AudioSetCaps and the evaluation scripts](https://github.com/JishengBai/AudioSetCaps/tree/main/eval_script). Our state-of-the-art result can be easily reproduced with these checkpoints.
 3. Pipeline: Our [automatic data labeling pipeline](https://github.com/JishengBai/AudioSetCaps/tree/main/pipeline) is open-sourced. You can consider extend it to other audio dataset to create your own audio-text paired dataset.
 
@@ -16,6 +16,7 @@ We show that model trained with AudioSetCaps achieves SOTA result on audio capti
 
 ## :loudspeaker: News 
 **2024-10**: Our full-length paper will be publicly available soon. Please stay tuned for the update!
+
 **2024-10**: To appear at [NeurIPS 2024 Audio Imagination Workshop](https://openreview.net/group?id=NeurIPS.cc/2024/Workshop/Audio_Imagination#tab-accept): NeurIPS 2024 Workshop AI-Driven Speech, Music, and Sound Generation.
 
 ## Statistic
