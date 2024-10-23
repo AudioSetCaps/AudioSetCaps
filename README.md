@@ -37,6 +37,8 @@ Note that:
 
 For the 4M subset of YouTube-8M, you can download it through [Google Drive](https://drive.google.com/drive/folders/1ZKyRZw3AhS3HkWivgMqtMODB0TkVPNk5?usp=sharing).
 
+![example/scaling.pdf](example/scaling.png)
+
 ## Example
 
 For each audio clip, we assign a caption to it. Associated with the audio, there are also three Q&A pairs, which were used as the metadata to generate the final caption.
