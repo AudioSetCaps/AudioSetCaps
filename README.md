@@ -1,20 +1,40 @@
 # AudioSetCaps: An Enriched Audio-Caption Dataset using Automated Generation Pipeline with Large Audio and Language Models
 
-[`Link to our paper (Appeared at the NeurIPS 2024 Workshop)`](https://openreview.net/forum?id=uez4PMZwzP&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DNeurIPS.cc%2F2024%2FWorkshop%2FAudio_Imagination%2FAuthors%23your-submissions)) 
+[`Link to our paper (Appearing at the NeurIPS 2024 Workshop)`](https://openreview.net/forum?id=uez4PMZwzP&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DNeurIPS.cc%2F2024%2FWorkshop%2FAudio_Imagination%2FAuthors%23your-submissions)) 
 
 [![githubio](https://img.shields.io/badge/GitHub.io-Audio_Samples-blue?logo=Github&style=flat-square)](https://jishengbai.github.io/AudioSetCaps-webpage/)  [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/datasets/baijs/AudioSetCaps) 
 
-**This project aims to build the largest audio-text paired dataset for scaling up relevant model training.**
+**This project aims to build the largest audio-text paired dataset for scaling up related model training.**
 
 We provide:
 
-1. Dataset: Captions for 6,117,099 (~6M) 10-second audio files, sourcing from AudioSet, YouTube-8M and VGGSound. We also provide our intermediate metadata (e.g., Audio Q&A caption) for each audio (18,414,789 paired Q&A data in total). Download it now on [🤗 HuggingFace](https://huggingface.co/datasets/baijs/AudioSetCaps).
+1. Dataset: Captions for **6,117,099 (~6M)** 10-second audio files, sourcing from AudioSet, YouTube-8M and VGGSound. We also provide our intermediate metadata (e.g., Audio Q&A caption) for each audio (18,414,789 paired Q&A data in total). Download it now on [🤗 HuggingFace](https://huggingface.co/datasets/baijs/AudioSetCaps).
 2. Checkpoints: [The retrieval and captioning model checkpoint that are pretrained on AudioSetCaps and the evaluation scripts](https://github.com/JishengBai/AudioSetCaps/tree/main/eval_script). Our state-of-the-art result can be easily reproduced with these checkpoints.
 3. Pipeline: Our [automatic data labeling pipeline](https://github.com/JishengBai/AudioSetCaps/tree/main/pipeline) is open-sourced. You can consider extend it to other audio dataset to create your own audio-text paired dataset.
 
-## :loudspeaker: News 
+We show that model trained with AudioSetCaps achieves SOTA result on audio captioning (e.g., 84.8 CIDEr) and audio retrieval task (e.g., R@1 43.4-T2A & 57.3-A2T). 
 
+## :loudspeaker: News 
+**2024-10**: Our full-length paper will be publicly available soon. Please stay tuned for the update!
 **2024-10**: To appear at [NeurIPS 2024 Audio Imagination Workshop](https://openreview.net/group?id=NeurIPS.cc/2024/Workshop/Audio_Imagination#tab-accept): NeurIPS 2024 Workshop AI-Driven Speech, Music, and Sound Generation.
+
+## Statistic
+We provide the caption and Q&A data for the following three datasets:
+
+| Dataset            | # Audio captions  | # Q&A captions | Total |
+|--------------------|----------|-------------------------|------------------|
+|      AudioSetCaps  | 1910920   |         5736072         |       7646992       |
+|      YouTube-8M    |   4023990  |         12086037         |     16110027      |
+|     VGGSound    |  182189   |          592680         |      774869       |
+| Total |  6117099  |         18414789          |       24531888      |
+
+
+Note that:
+1. There are potential overlap between these three datasets.
+2. AudioSet and VGGSound evaluation set is included, so please use it with caution.
+3. We only use 4M of the audio in the YouTube-8M dataset, as most of the videos are not available any more.
+
+For the 4M subset of YouTube-8M, you can download it through [Google Drive](https://drive.google.com/drive/folders/1ZKyRZw3AhS3HkWivgMqtMODB0TkVPNk5?usp=sharing).
 
 ## Example
 
@@ -39,7 +59,7 @@ Evaluation codes for reproduce results of pre-trained models
 
 
 ## Cite
-Please cite our papers as below if found this work is helpful:
+If you found this repo is helpful, please consider citing our paper:
 ```bibtex
 @inproceedings{
 bai2024audiosetcaps,
